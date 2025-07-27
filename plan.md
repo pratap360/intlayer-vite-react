@@ -6,7 +6,7 @@
 - Project should highlight what makes Intlayer unique vs. other i18n tools.
 
 ## Task List
-- [ ] Research example Intlayer integration in React (with Redux, Webpack)
+- [ ] Research example Intlayer integration in React vite
 - [ ] Design a basic project structure (text-heavy, suitable for i18n demo)
 - [ ] Document unique features of Intlayer for comparison
 - [ ] Set up React + Redux + Webpack boilerplate
@@ -20,74 +20,38 @@ Research Intlayer integration in React with Redux/Webpack
 
 ## Proposed Project Structure
 
-<!-- tech-blog-platform/
-├── src/
-│   ├── components/
-│   │   ├── Header/
-│   │   ├── BlogPost/
-│   │   ├── AuthorCard/
-│   │   └── CommentSection/
-│   ├── pages/
-│   │   ├── Home/
-│   │   ├── BlogDetail/
-│   │   └── About/
-│   ├── store/ (Redux)
-│   └── intlayer/ (i18n content)
-├── webpack.config.js
-└── package.jsonv -->
-
 ```
-tech-blog-platform/
+intlayer-demo/
 ├── public/
-│   ├── index.html
-│   └── favicon.ico
+│   └── index.html
 ├── src/
 │   ├── components/
 │   │   ├── Header/
-│   │   │   ├── Header.tsx
-│   │   │   ├── Header.content.ts (Intlayer dictionary)
-│   │   │   └── index.ts
-│   │   ├── BlogPost/
-│   │   │   ├── BlogPost.tsx
-│   │   │   ├── BlogPost.content.ts
-│   │   │   └── index.ts
-│   │   ├── AuthorCard/
-│   │   │   ├── AuthorCard.tsx
-│   │   │   ├── AuthorCard.content.ts
-│   │   │   └── index.ts
-│   │   └── CommentSection/
-│   │       ├── CommentSection.tsx
-│   │       ├── CommentSection.content.ts
-│   │       └── index.ts
+│   │   │   ├── Header.tsx              # Localized header
+│   │   │   └── Header.content.ts       # Intlayer dictionary for header
+│   │   ├── Footer/
+│   │   │   ├── Footer.tsx              # Localized footer
+│   │   │   └── Footer.content.ts
+│   │   ├── Language/
+│   │   │   └── Language.tsx    # Dropdown/buttons to change language
+│   │   └── BlogSummaryList/
+│   │       ├── BlogSummaryList.tsx     # Shows blog post summaries
+│   │       └── BlogSummaryList.content.ts
 │   ├── pages/
-│   │   ├── Home/
-│   │   │   ├── Home.tsx
-│   │   │   ├── Home.content.ts
-│   │   │   └── index.ts
-│   │   ├── BlogDetail/
-│   │   │   ├── BlogDetail.tsx
-│   │   │   ├── BlogDetail.content.ts
-│   │   │   └── index.ts
-│   │   └── About/
-│   │       ├── About.tsx
-│   │       ├── About.content.ts
-│   │       └── index.ts
-│   ├── store/ (Redux)
-│   │   ├── index.ts
-│   │   ├── blogSlice.ts
-│   │   └── types.ts
-│   ├── types/
-│   │   └── intlayer.d.ts
-│   ├── App.tsx
-│   ├── index.tsx
-│   └── intlayer.config.ts
-├── webpack.config.js
+│   │   ├── Home.tsx                    # Home page: lists blog summaries
+│   │   └── Post.tsx                    # Post page: full view of a post
+│   ├── App.tsx                         # Main app, uses IntlayerProvider
+│   ├── intlayer.config.ts              # Intlayer global config
+│   └── index.tsx                       # Entry point
 ├── package.json
-├── tsconfig.json
-├── intlayer.config.ts (global config)
 └── README.md
 ```
+**Key Features:**
 
+- Each component has its own `.content.ts` dictionary for easy localization.
+- LanguageSwitcher for instant language change.
+- Home and Post pages to demonstrate i18n in action.
+- Simple and clear for both tech and non-tech users.
 
 --- 
 ### informed by aymeric 
