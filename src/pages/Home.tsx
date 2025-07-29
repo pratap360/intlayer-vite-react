@@ -1,7 +1,17 @@
 
+import { Header } from '../components/Header/Header';
+import './Home.css';
 
 export const Home = () => {
   return (
-    <div>Just checking Home Page</div>
-  )
-}
+    <div className="home-page">
+      <Header />
+      <main className="main-content">
+        <div className="container">
+          <h1>Welcome to Intlayer Blog Demo</h1>
+          <p>This is a demo showing how to use Intlayer for content management in a React application.</p>
+        </div>
+      </main>
+    </div>
+  );
+};
