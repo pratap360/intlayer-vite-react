@@ -22,7 +22,7 @@ const footerContent = {
       {
         label: t({
           en: 'About',
-          fr: '  propos',
+          fr: ' propos',
           es: 'Acerca de',
           hi: ''
         }),

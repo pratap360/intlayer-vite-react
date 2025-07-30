@@ -1,5 +1,6 @@
 
 import { Header } from '../components/Header/Header';
+import { Footer } from '../components/Footer/Footer';
 import './Home.css';
 
 export const Home = () => {
@@ -12,6 +13,7 @@ export const Home = () => {
           <p>This is a demo showing how to use Intlayer for content management in a React application.</p>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

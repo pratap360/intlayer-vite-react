@@ -12,47 +12,32 @@ const headerContent = {
     navigation: [
       {
         label: t({
-          en: 'Home',
-          fr: 'Accueil',
-          es: 'Inicio',
-          hi: 'होम'
-        }),
-        url: '/'
-      },
-      {
-        label: t({
-          en: 'Blog',
-          fr: 'Blog',
-          es: 'Blog',
-          hi: 'ब्लॉग'
-        }),
-        url: '/blog'
-      },
-      {
-        label: t({
-          en: 'About',
-          fr: 'À propos',
-          es: 'Acerca de',
+          en: 'About Us',
+          fr: 'A propos de nous',
+          es: 'Sobre nosotros',
           hi: 'हमारे बारे में'
         }),
         url: '/about'
       },
       {
         label: t({
-          en: 'Contact',
-          fr: 'Contact',
-          es: 'Contacto',
-          hi: 'संपर्क करें'
+          en: 'Contribution Guidelines',
+          fr: 'Directives de contribution',
+          es: 'Pautas de contribución',
+          hi: 'सहयोग के लिए नियम'
         }),
-        url: '/contact'
+        url: '/contribution'
+      },
+      {
+        label:t({
+          en: 'GitHub',
+          fr: 'GitHub',
+          es: 'GitHub',
+          hi: 'गिटहब'
+        }),
+        url: 'https://github.com/aymericzip/intlayer'
       }
     ],
-    searchPlaceholder: t({
-      en: 'Search posts...',
-      fr: 'Rechercher des articles...',
-      es: 'Buscar publicaciones...',
-      hi: 'पोस्ट खोजें...'
-    })
   }
 }
 
