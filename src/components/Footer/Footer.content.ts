@@ -1,44 +1,15 @@
-import { t, type DeclarationContent } from 'intlayer';
+import { t } from 'intlayer';
 
 const footerContent = {
   key: 'footer',
   content: {
     copyright: t({
-      en: ' 2025 IntLayer Blog. All rights reserved.',
-      fr: ' 2025 Blog IntLayer. Tous droits rservs.',
-      es: ' 2025 Blog IntLayer. Todos los derechos reservados.',
-      hi: ' 2025 . '
-    }),
-    links: [
-      {
-        label: t({
-          en: 'Home',
-          fr: 'Accueil',
-          es: 'Inicio',
-          hi: ''
-        }),
-        url: '/'
-      },
-      {
-        label: t({
-          en: 'About',
-          fr: ' propos',
-          es: 'Acerca de',
-          hi: ''
-        }),
-        url: '/about'
-      },
-      {
-        label: t({
-          en: 'Contact',
-          fr: 'Contact',
-          es: 'Contacto',
-          hi: ''
-        }),
-        url: '/contact'
-      }
-    ]
+      en: 'Intlayer Blog. All rights reserved.',
+      fr: 'Blog Intlayer. Tous droits rservs.',
+      es: 'Blog Intlayer. Todos los derechos reservados.',
+      hi: 'इंटलेयर ब्लॉग सभी अधिकार राखे।'
+    })
   }
-} satisfies DeclarationContent;
+}
 
 export default footerContent;

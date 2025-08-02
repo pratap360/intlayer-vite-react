@@ -4,10 +4,10 @@ const headerContent = {
   key: 'header',
   content: {
     siteName: t({
-      en: 'Intlayer Blog',
-      fr: 'Blog Intlayer',
-      es: 'Blog de Intlayer',
-      hi: 'इंटलेयर ब्लॉग'
+      en: 'Intlayer Blog Demo',
+      fr: 'Démo du blog Intlayer',
+      es: 'Demostración del blog de Intlayer',
+      hi: 'इंटलेयर ब्लॉग डेमो'
     }),
     navigation: [
       {

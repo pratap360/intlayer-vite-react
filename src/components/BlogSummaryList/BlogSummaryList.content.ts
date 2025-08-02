@@ -1,6 +1,6 @@
 import { t, type DeclarationContent } from 'intlayer';
 
-const blogSummaryListContent = {
+const blogSummaryListContent: DeclarationContent = {
   key: 'blog-summary-list',
   content: {
     title: t({
@@ -26,8 +26,20 @@ const blogSummaryListContent = {
       fr: 'Lire la suite',
       es: 'Leer más',
       hi: 'और पढ़ें'
+    }),
+    loading: t({
+      en: 'Loading blog posts...',
+      fr: 'Chargement des articles...',
+      es: 'Cargando publicaciones...',
+      hi: 'ब्लॉग पोस्ट लोड हो रहा है...'
+    }),
+    error: t({
+      en: 'Failed to load blog posts. Please try again later.',
+      fr: 'Échec du chargement des articles. Veuillez réessayer plus tard.',
+      es: 'Error al cargar las publicaciones. Por favor, inténtelo de nuevo más tarde.',
+      hi: 'ब्लॉग पोस्ट लोड करने में विफल। कृपया बाद में पुनः प्रयास करें।'
     })
   }
-} satisfies DeclarationContent;
+}
 
 export default blogSummaryListContent;

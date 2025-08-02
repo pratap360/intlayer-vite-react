@@ -68,7 +68,7 @@ Here some points about intlayer:
 - free visual editor + CMS if you need to works with content writer for your translations, again no need localization platform and you can externalise the content from the codebase
 - no need to call your t function for each content, retrieve all your content straight using a single hook
 - same implementation for client and server components, no need to pass your t function across each server component
-- the unused content will be purged at build time. Each dictionary is three shakable, so you will lighter the final bundle
+- the unused content will be purged at build time. Each dictionary is tree shakable, so you will lighter the final bundle
 - Intlayer don't block Static Rendering as does next-intl
 - Manage multilingual page metadata, sitemap, robot.txt, etc
-- An improved middleware to redirect the user to the proper localized page, that does not block nextjs page prefetching
+- An improved middleware to redirect the user to the proper localized page, that does not block nextjs page prefetching.
