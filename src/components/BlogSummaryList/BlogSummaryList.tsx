@@ -35,7 +35,7 @@ export const BlogSummaryList = () => {
 
   const handlePostClick = (post: BlogPost) => {
     // Create a URL-friendly slug from the post title
-    const slug = post.title
+    const slug = post.link
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/(^-|-$)/g, '');

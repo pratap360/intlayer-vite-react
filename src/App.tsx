@@ -2,8 +2,8 @@ import { IntlayerProvider } from "react-intlayer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { BlogViewer } from "./components/BlogViewer/BlogViewer";
-import { Contribution } from "./pages/Contribution";
-import About from "./pages/About";
+import { Contribution } from "./pages/Contribution/Contribution";
+import About from "./pages/About/About";
 
 function App() {
   return (

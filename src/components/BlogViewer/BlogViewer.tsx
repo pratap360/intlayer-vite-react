@@ -4,6 +4,8 @@ import type { BlogPost } from '../../services/blogService';
 import { fetchBlogPosts } from '../../services/blogService';
 import { useIntlayer, useLocale } from 'react-intlayer';
 import './BlogViewer.css';
+import { Header } from '../Header/Header';
+import { Footer } from '../Footer/Footer';
 // import blogViewerContent from './BlogViewer.content';
 
 // Extend the location state type
@@ -42,7 +44,8 @@ export const BlogViewer = () => {
         // Try to find the post by URL slug first, then by title
         const foundPost = posts.find(p => {
           if (!postId) return false;
-          const postSlug = p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+          // const postSlug = p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+          const postSlug = p.link
           return p.link.includes(postId) || postSlug === postId;
         });
         
@@ -104,6 +107,8 @@ export const BlogViewer = () => {
   }
 
   return (
+    <>
+    <Header />
     <div className="blog-viewer">
       <button onClick={handleBack} className="back-button">
         {content.backToBlog || 'Back to Blog'}
@@ -133,18 +138,10 @@ export const BlogViewer = () => {
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.content || post.description }}
         />
-
-        {/* <footer className="post-footer">
-          <a 
-            href={post.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="original-post-link"
-          >
-            {content.readOriginal || 'Read original post'}
-          </a>
-        </footer> */}
       </article>
     </div>
+    <Footer />
+    </>
+    
   );
 };

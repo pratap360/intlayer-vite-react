@@ -1,8 +1,8 @@
 import React from 'react';
 import { useIntlayer } from 'react-intlayer';
 import { Link } from 'react-router-dom';
-import { Header } from '../components/Header/Header';
-import { Footer } from '../components/Footer/Footer';
+import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
 import './About.css';
 
 // Import the content to register it with Intlayer
