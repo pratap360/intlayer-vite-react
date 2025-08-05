@@ -4,8 +4,19 @@ A modern, multilingual blog application built with React, Vite, and Intlayer to 
 
 ## 🌟 Features
 
-- **🌍 Multilingual Support**: Built-in internationalization with support for English, French, Spanish, and Hindi
+- **🚀 Intlayer Highlights**: Unique features that set Intlayer apart:
+  - Component-level translation declarations (keep translations close to your components)
+  - Type-safe content definitions using TypeScript
+  - Visual editor for in-browser content editing and integrated CMS
+  - AI-powered content suggestions while typing
+  - Markdown support for structured content
+  - Free, open source, minimal setup
+
+
+- **🌍 Multilingual Support**: Built-in internationalization with support for English, French, Spanish, and Hindi (for this demo)
 - **🎨 Modern UI**: Beautiful hero section with translator image background and responsive design
+- **🧠 Visual Editor & AI**: Edit content directly on your site and get AI-powered translation and content suggestions (if enabled)
+
 - **📝 Blog Management**: Dynamic blog post display with summary cards and detailed views
 - **⚡ Fast Performance**: Built with Vite for lightning-fast development and build times
 - **🔧 TypeScript**: Full TypeScript support for type-safe development
@@ -14,7 +25,7 @@ A modern, multilingual blog application built with React, Vite, and Intlayer to 
 
 ## 🚀 Live Demo
 
-🔗 **Live Demo**: [https://url-live/](https://url-live/)
+🔗 **Live Demo**: [Intlayer Blog Demo](https://intlayer-blog-demo.vercel.app/)
 
 ## 🛠️ Tech Stack
 
@@ -51,9 +62,9 @@ A modern, multilingual blog application built with React, Vite, and Intlayer to 
 ## 🏗️ Project Structure
 
 ```
-intlayer-feedback/
+intlayer-blog-demo/
 ├── src/
-│   ├── components/          # Reusable UI components
+│   ├── components/         # Reusable UI components
 │   │   ├── Header/         # Navigation header
 │   │   ├── Footer/         # Page footer
 │   │   ├── BlogViewer/     # Individual blog post viewer
@@ -139,7 +150,7 @@ Optimized for React development with Intlayer plugin integration.
 
 - **Intlayer Documentation**: [https://github.com/aymericzip/intlayer](https://github.com/aymericzip/intlayer)
 
-- **Check out the Detial Guide Blog**: [https://paruidev.com](https://paruidev.com)
+- **Check out the Detail Guide Blog**: [https://paruidev.com](https://paruidev.com)
 
 ## 📄 License
 
