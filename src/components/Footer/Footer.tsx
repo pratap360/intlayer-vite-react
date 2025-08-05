@@ -3,7 +3,7 @@ import { useIntlayer } from 'react-intlayer';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const { copyright,community } = useIntlayer('footer');
+  const { copyright } = useIntlayer('footer');
 
   return (
     <footer className="py-4 text-center text-gray-600 text-sm">

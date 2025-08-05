@@ -180,6 +180,23 @@
   }
 }
 
+@media (max-width: 600px) {
+  .about-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .learn-more-button,
+  .back-home-button {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 0.9rem 0;
+  }
+}
+
 @media (max-width: 480px) {
   .about-title {
     font-size: 2rem;
