@@ -5,7 +5,7 @@ const footerContent = {
   content: {
     copyright: t({
       en: 'Intlayer Blog. All rights reserved.',
-      fr: 'Blog Intlayer. Tous droits rservs.',
+      fr: 'Blog Intlayer. Tous droits réservés.',
       es: 'Blog Intlayer. Todos los derechos reservados.',
       hi: 'इंटलेयर ब्लॉग सभी अधिकार राखे।'
     }),

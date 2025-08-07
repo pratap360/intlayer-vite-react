@@ -6,14 +6,11 @@ const config: IntlayerConfig = {
       Locales.ENGLISH,
       Locales.FRENCH,
       Locales.SPANISH,
-      Locales.HINDI
-      // Your other locales
+      Locales.HINDI  // added our national language
+      // add more languages
     ],
     defaultLocale: Locales.ENGLISH,
   },
-  // log:{
-  //   mode: "verbose",
-  // }
 };
 
 export default config;
